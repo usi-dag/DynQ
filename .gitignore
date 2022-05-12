@@ -1,0 +1,47 @@
+# IntelliJ files
+.idea
+**/*.iml
+
+# DynQ build
+mxbuild
+dynq.src.zip*
+dynq_js.src.zip*
+dynq_r.src.zip*
+
+# Graal dumps
+graal_dumps*
+
+# DuckDB plan dumps
+duck-plans*
+
+# Calcite build
+lib/calcite/target
+
+# R Libs
+r-lib*
+
+# Python compiled/cached files
+**/__pycache__
+**/*.pyc
+
+# Benchmarking specific
+**.jfr
+
+# Testing specific
+**/*.log
+**/*.tap
+
+# VS Code
+**/.vscode
+
+### DynQ.JS specific:
+# Node.JS modules
+**/node_modules/
+
+# AfterBurner Results
+linq-js/afterburner/results
+
+### DynQ.R specific:
+
+
+### DynQ.Py specific:
