@@ -1,0 +1,24 @@
+{
+  "name": "cities-webserver",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "cities": "^2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-matcher-deep-close-to": "^2.0.1",
+    "benchmark": "^2.1.4",
+    "nodemark": "^0.3.0"
+  },
+  "scripts": {
+    "test": "./test-jest.sh"
+  },
+  "jest": {
+    "testTimeout": 120000,
+    "testResultsProcessor": "./test/jest.ci.processor",
+    "testEnvironment": "node"
+  },
+  "author": "Filippo Schiavio",
+  "license": "ISC"
+}
