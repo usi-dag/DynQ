@@ -7,7 +7,7 @@ cd $DYNQ
 # MX build tool
 if [ ! -d "mx" ]; then
   echo "Downloading mx build tool..."
-  git clone git@github.com:graalvm/mx.git
+  git clone https://github.com/graalvm/mx.git
   cd mx
   git checkout 5.315.2
 fi
