@@ -4,7 +4,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 DYNQ_HOME=$DIR/..
 
-export JAVA_HOME=$GRAALVM_HOME
+GRAALVM_DIR="graalvm-ce-java11-21.3.0"
+export GRAALVM_DYNQ="${GRAALVM_DYNQ:-$DYNQ/$GRAALVM_DIR/}"
+export GRAALVM=$GRAALVM_DYNQ
 
 if [ -z "$DYNQ_JAR" ]
   then
