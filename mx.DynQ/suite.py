@@ -70,15 +70,10 @@ suite = {
             }
         },
 
-        # TODO: get rid of this -- the above ones cannot create reproducible builds (mnv)
-        # Calcite 1.29 (on h620 server)
-        "CALCITE-ALL": {
-            "sha1": "b541a885f09424aae7664d564116502d1b5c28fa",
-            'sourceSha1': 'a6447cd772d097484b688176b7f62bb215810630',
-            "urls": [
-                "http://h620.inf.unisi.ch/sql/calcite/1.29.0/calcite.jar",
-                "http://h620.inf.unisi.ch/sql/calcite/1.29.0/calcite-sources.jar",
-            ],
+        # Calcite 1.29
+        'CALCITE': {
+            "sha1": "edac5c027882bd88087c7ee3eca7598bed2c446e",
+            'path': './lib/calcite/target/calcite.jar'
         },
 
         "SLF4J": {
@@ -132,7 +127,7 @@ suite = {
             "dependencies": [
                 "TRUFFLE_API",
                 "GRAAL_SDK",
-                "CALCITE-ALL",
+                "CALCITE",
                 "SLF4J",
             ],
         },
@@ -169,7 +164,7 @@ suite = {
             ],
             "distDependencies": [
                 "TRUFFLE_API",
-                "CALCITE-ALL",
+                "CALCITE",
                 "SLF4J"
             ],
             "sourcesPath": "dynq.src.zip",

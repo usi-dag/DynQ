@@ -7,6 +7,9 @@ mxbuild
 dynq.src.zip*
 dynq_js.src.zip*
 dynq_r.src.zip*
+graalvm*
+openjdk*
+mx
 
 # Graal dumps
 graal_dumps*
