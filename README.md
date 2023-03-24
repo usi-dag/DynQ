@@ -29,4 +29,4 @@ A simple usage example can be found in `linq-js/example.js` and run with:
 
 
 ### Development
-DynQ is developed by Filippo Schiavio (@flpo)
+DynQ is developed by Filippo Schiavio ([@flpo](https://github.com/flpo))
