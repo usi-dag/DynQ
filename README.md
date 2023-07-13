@@ -14,7 +14,7 @@ DynQ can be embedded in GraalVM languages by appending its .jar files to the cla
 Scripts to embed DynQ on GraalJS (node) and FastR are provided:
 ```
 ./scripts/node.sh
-./scripts/R.sh # equivalent to RScript in GnuR
+./scripts/r.sh # equivalent to RScript in GnuR
 ``` 
 
 
