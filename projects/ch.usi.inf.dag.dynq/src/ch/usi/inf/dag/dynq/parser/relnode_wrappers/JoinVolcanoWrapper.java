@@ -15,6 +15,7 @@ import org.apache.calcite.rex.RexInputRef;
 import org.apache.calcite.rex.RexNode;
 import org.apache.calcite.rex.RexVisitorImpl;
 
+import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -113,6 +114,7 @@ public class JoinVolcanoWrapper extends Join implements RelNodeVolcanoWrapper {
         public JoinDependency visitCall(RexCall call) {
             Set<JoinDependency> deps = call.operands.stream()
                     .map(op -> op.accept(this))
+                    .filter(Objects::nonNull)
                     .collect(Collectors.toSet());
 
             switch (deps.size()) {
